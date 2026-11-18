@@ -20,6 +20,7 @@ use vectorcraft_ui_egui::stylus::StylusFeed;
 use vectorcraft_ui_egui::{PickedInbox, Services, VectorcraftApp};
 use wasm_bindgen::JsCast as _;
 
+use crate::host::Bridge;
 use crate::locks::WebLocks;
 use crate::pencil::SharedPointers;
 
@@ -70,6 +71,9 @@ struct Host {
     /// The page's Web Locks for Data Recovery, started once before the first frame: a graphics
     /// restart keeps them, so the tab stays the owner of its recovery area.
     locks: Option<WebLocks>,
+    /// The page that frames the app with `?host=parent`, if one does: it sends the documents and
+    /// is given the saves (`crate::host`).
+    bridge: Option<Bridge>,
     /// Graphics restarts so far.
     restarts: u32,
 }
@@ -81,9 +85,13 @@ pub fn start() {
         return;
     };
     detect_language();
+    // `?host=parent`: a same-origin page that frames VectorCraft opens documents in it and stores
+    // what it saves. Unframed, or framed by another origin, it stays the normal app with downloads.
+    let bridge = Bridge::connect(&canvas);
     wasm_bindgen_futures::spawn_local(async move {
-        // Before the first frame, which looks for copies a crash left behind.
-        let locks = WebLocks::start(RECOVERY_PREFIX).await;
+        // Before the first frame, which looks for copies a crash left behind. A hosted app keeps
+        // no recovery copies (see `run`), so it holds no locks for them.
+        let locks = if bridge.is_some() { None } else { WebLocks::start(RECOVERY_PREFIX).await };
         // Fallback fonts the first frame needs (Noto Sans Arabic), fetched while the loading text
         // shows; the rest load in the background once the app runs.
         crate::fonts::load_startup_fonts().await;
@@ -96,6 +104,7 @@ pub fn start() {
             pasted: Rc::default(),
             pointers: SharedPointers::default(),
             locks,
+            bridge,
             restarts: 0,
         };
         track_paste(&host.pasted);
@@ -120,6 +129,8 @@ async fn run(host: Host, canvas: web_sys::HtmlCanvasElement, moving: Option<Movi
     let slot = Rc::new(RefCell::new(moving.map(|m| m.app)));
     let (runner, taken, page) = (host.runner.clone(), slot.clone(), canvas.clone());
     let (pointers, pen_canvas) = (host.pointers.clone(), canvas.clone());
+    // The runner's closure takes `host`: the page is told from here when starting fails.
+    let bridge = host.bridge.clone();
     let result = runner
         .start(
             canvas,
@@ -137,8 +148,14 @@ async fn run(host: Host, canvas: web_sys::HtmlCanvasElement, moving: Option<Movi
                 }
                 host.pasted.borrow_mut().ctx = Some(ctx.clone());
                 let stylus = host.pointers.borrow().stylus();
-                let services =
+                let mut services =
                     services(host.inbox.clone(), host.place_inbox.clone(), host.script_inbox.clone(), ctx.clone(), host.locks.clone(), stylus);
+                if let Some(bridge) = &host.bridge {
+                    bridge.set_context(ctx);
+                    // The page keeps the documents, and browser storage belongs to its site: copies
+                    // kept there would be offered to the next person who uses this browser on it.
+                    services.recovery_store = None;
+                }
                 let app = match taken.borrow_mut().take() {
                     Some(mut app) => {
                         // The old services asked the old context for frames.
@@ -153,6 +170,12 @@ async fn run(host: Host, canvas: web_sys::HtmlCanvasElement, moving: Option<Movi
                         crate::api::connect(Some(control_tx), host.inbox.page.clone(), ctx.clone());
                         if let Err(e) = crate::api::install() {
                             log::error!("vectorcraft-web: couldn't install window.vectorcraft: {}", js_err(e));
+                        }
+                        // Listening comes first: the page answers `ready` with the document. Not
+                        // after a graphics restart, where the documents are still open.
+                        if let Some(bridge) = &host.bridge {
+                            bridge.listen();
+                            bridge.post_ready();
                         }
                         VectorcraftApp::new(Session::new(), services).with_control(control_rx)
                     }
@@ -170,10 +193,14 @@ async fn run(host: Host, canvas: web_sys::HtmlCanvasElement, moving: Option<Movi
                 el.remove();
             }
         }
-        (Err(e), None) => notice(&[&format!("VectorCraft failed to start: {}", js_err(e)), "A browser with WebGPU or WebGL2 is required."]),
+        (Err(e), None) => {
+            let failed = format!("VectorCraft failed to start: {}", js_err(e));
+            tell_host(bridge.as_ref(), &failed);
+            notice(&[&failed, "A browser with WebGPU or WebGL2 is required."]);
+        }
         (Err(e), Some(kept)) => {
             log::error!("vectorcraft-web: couldn't restart the graphics: {}", js_err(e));
-            give_up(slot.borrow_mut().take(), kept);
+            give_up(slot.borrow_mut().take(), kept, bridge.as_ref());
         }
     }
 }
@@ -181,7 +208,7 @@ async fn run(host: Host, canvas: web_sys::HtmlCanvasElement, moving: Option<Movi
 /// The runner's options: wgpu (WebGPU where available, else WebGL2; `?webgl` forces WebGL2).
 fn web_options() -> eframe::WebOptions {
     let mut options = eframe::WebOptions::default();
-    if query().contains("webgl")
+    if crate::has_flag(&query(), "webgl")
         && let eframe::egui_wgpu::WgpuSetup::CreateNew(create) = &mut options.wgpu_options.wgpu_setup
     {
         create.instance_descriptor.backends = eframe::wgpu::Backends::GL;
@@ -304,22 +331,32 @@ fn fresh_canvas(old: &web_sys::HtmlCanvasElement) -> Result<web_sys::HtmlCanvasE
 
 /// The graphics are lost for good: the dead canvas goes (it would show a stale picture), the app
 /// (if still here) lets go of its recovery copies so the reloaded page offers them at once, and
-/// the page says what to do.
-fn give_up(app: Option<VectorcraftApp>, kept: bool) {
+/// the page says what to do. A page that hosts the app (`bridge`) is told too.
+fn give_up(app: Option<VectorcraftApp>, kept: bool, bridge: Option<&Bridge>) {
+    const LOST: &str = "The graphics were lost and couldn't be restarted.";
     if let Some(mut app) = app {
         recovery::leave(&mut app.session);
     }
     if let Some(canvas) = element(CANVAS_ID) {
         canvas.remove();
     }
+    tell_host(bridge, LOST);
     notice(&[
-        "The graphics were lost and couldn't be restarted.",
+        LOST,
         if kept {
             "Your unsaved changes are kept in this browser: reload the page to get them back."
         } else {
             "Reload the page to go on (changes not saved yet may be lost)."
         },
     ]);
+}
+
+/// Tell the page that hosts the app, if one does, that it can't go on: `line`, in the language
+/// [`notice`] shows it in.
+fn tell_host(bridge: Option<&Bridge>, line: &str) {
+    if let Some(bridge) = bridge {
+        bridge.post_failed(&i18n::message(i18n::system_lang(), line));
+    }
 }
 
 /// Show `lines` in the middle of the page (where the loading message was).
@@ -375,7 +412,7 @@ impl WebShell {
                 log::error!("vectorcraft-web: giving up on the graphics: {e}");
                 let runner = host.runner;
                 wasm_bindgen_futures::spawn_local(async move { runner.destroy() });
-                give_up(Some(app), kept);
+                give_up(Some(app), kept, host.bridge.as_ref());
             }
         }
     }
@@ -388,6 +425,11 @@ impl eframe::App for WebShell {
         }
         let Some(app) = &mut self.app else { return };
         app.tick(ctx);
+        if let Some(bridge) = &self.host.bridge {
+            // After the tick, where the app opens the files of its own inboxes.
+            bridge.open_arrived(app);
+            bridge.report_dirty(app);
+        }
         app.finish_ime_logic(ctx);
     }
 
@@ -611,10 +653,14 @@ impl RecoveryStore for BrowserStore {
     }
 }
 
-/// Trigger a browser download of `bytes` named after the last component of `path`.
+/// Trigger a browser download of `bytes` named after the last component of `path`. A page that
+/// hosts the app is given the documents and pictures instead (`crate::host`).
 fn download(path: &str, bytes: &[u8]) -> Result<(), String> {
     if crate::api::capture(path, bytes) {
         return Ok(());
+    }
+    if let Some(sent) = crate::host::deliver(path, bytes) {
+        return sent;
     }
     let js = |e: wasm_bindgen::JsValue| format!("{e:?}");
     let name = std::path::Path::new(path).file_name().map(|n| n.to_string_lossy().to_string()).unwrap_or_else(|| "vectorcraft".into());
