@@ -1,6 +1,6 @@
 # Localization parity
 
-> **Last reviewed:** 2026-10-10 · **Last updated:** 2026-11-06 · **Change:** minor (Hindi catalog draft complete under the translation tests; contributor loanword terminology reviewed; wider proofreading welcome; Brazilian Portuguese: 154 rows for the strings the sibling catalogs translate — smart-filter and print presets, dimension lines, swatches, canvas messages; previously minor: Bosnian (`bs`): complete catalog; previously minor: Vietnamese text: stacked diacritics tested and attach in every form, #4491; previously: Catalan (`ca`) catalog added, complete under the tests)
+> **Last reviewed:** 2026-10-10 · **Last updated:** 2026-11-18 · **Change:** minor (Italian: 632 rows for strings without an Italian row — menu, dialog and list labels, default swatch names, status and error messages; AI-assisted, reviewed by the contributor, a native speaker; previously minor: Hindi catalog draft complete under the translation tests; contributor loanword terminology reviewed; wider proofreading welcome; Brazilian Portuguese: 154 rows for the strings the sibling catalogs translate — smart-filter and print presets, dimension lines, swatches, canvas messages; previously minor: Bosnian (`bs`): complete catalog; previously minor: Vietnamese text: stacked diacritics tested and attach in every form, #4491; previously: Catalan (`ca`) catalog added, complete under the tests)
 
 Per-language status of VectorCraft's interface. How the catalogs work and how to add a language:
 [`development.md` › Localisation](development.md#localisation). Part of
@@ -53,7 +53,7 @@ plus review. Native-speaker review is human work and isn't in the hours.
 | Language | Code | Translated | Status |
 |---|---|---|---|
 | Traditional Chinese (Taiwan) | `zh-hant` | 8,820 rows, 3,438 of them `@msg` and 48 `@msgplural` (counted 2026-11-13): the untranslated report lists 40 missing messages for it; menus, `tl!` literals and messages were complete when counted on 2026-10-21 (80% overall) | partial |
-| Italian | `it` | 8,924 rows, 3,560 of them `@msg` and 48 `@msgplural` (counted 2026-11-13): the untranslated report lists 54 missing messages for it, which open #7116, #7211, #7378 and #7405 translate | full |
+| Italian | `it` | 10,251 rows, 3,989 of them `@msg` and 55 `@msgplural` (counted 2026-11-18): the untranslated report lists 4 menu strings, 6 `tl!` strings and 57 messages for it alone (open #1858, #7401, #7996 and #8464 translate the strings and 16 of the messages), plus 16 messages and 3 undo labels that every language lacks | full |
 | Dutch | `nl` | 3,447 `@msg` and 48 `@msgplural` rows (counted 2026-11-13): in `COMPLETE_MESSAGES`, and the untranslated report lists 41 missing messages for it; one/other plurals | full |
 | Danish | `da` | 9,616 rows, 3,702 of them `@msg` and 49 `@msgplural` (counted 2026-11-15): in `COMPLETE_MESSAGES`, and the untranslated report lists 81 missing messages for it, 46 of them missing in every language; one/other plurals | full |
 | Russian | `ru` | 9,259 rows, 3,444 of them `@msg` and 48 `@msgplural` (counted 2026-11-13): in `COMPLETE_MESSAGES`; the untranslated report lists 46 menu strings, 21 `tl!` literals and 11 undo labels as missing | full |
@@ -99,6 +99,7 @@ font for the web build.
 
 | Date | Change | Summary |
 |---|---|---|
+| 2026-11-18 | minor | Italian (`it`): 632 rows for strings without an Italian row (menu, dialog and list labels, default swatch names, status and error messages), less those that open pull requests already propose; 10,251 rows; AI-assisted, written from the meaning of the English, reviewed by the contributor, a native speaker, who decided the doubtful strings. Scores and estimates unchanged. |
 | 2026-11-14 | minor | Gujarati (#6613): contributor proofreading completed for all 387 additions, with 11 wording corrections; 4,673 reviewed catalog rows. Status/error messages remain partial; web selection requires a bundled Gujarati face. Scores and estimates unchanged. |
 | 2026-11-12 | minor | Gujarati (`gu`): reviewed by a native speaker; zero/one singular plurals (CLDR); Gujarati craft-fonts faces join the UI fonts; strings added on main since branching translated (4,286 rows) |
 | 2026-11-11 | minor | Gujarati (`gu`): 4,235-row machine-assisted interface catalog, one/other plurals, desktop Gujarati font fallback and a glyph-coverage filter; status and error messages not yet translated; native review pending |
