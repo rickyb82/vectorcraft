@@ -295,6 +295,59 @@ mod tests {
         assert!(!app.session.doc().unwrap().is_dirty());
     }
 
+    /// On the web an export is named after the document, with no save panel to ask in. In the
+    /// document's own format that is the document's own file name, and a page that hosts the app
+    /// keeps its files by name: the export would be written over the document.
+    #[test]
+    fn a_web_export_in_the_documents_own_format_gets_a_name_of_its_own() {
+        let written = Written::default();
+        let w = written.clone();
+        let download: crate::DownloadFn = Box::new(move |name: &str, b: &[u8]| {
+            w.borrow_mut().push((name.to_string(), b.to_vec()));
+            Ok(())
+        });
+        let mut app = VectorcraftApp::new(Session::new(), Services { download: Some(download), ..Default::default() });
+        let svg = br##"<svg xmlns="http://www.w3.org/2000/svg" width="20" height="10"><rect width="20" height="10" fill="#33aa77"/></svg>"##;
+        open_bytes(&mut app, "logo.svg", svg, Some("logo.svg".into())).unwrap();
+        let last = |written: &Written| written.borrow().last().map(|(name, _)| name.clone());
+        export(&mut app, Some("svg"), None, &json!({})).unwrap();
+        assert_eq!(last(&written).as_deref(), Some("logo-export.svg"));
+        // A path the caller gave is taken as given, and a document without a file keeps its title.
+        export(&mut app, Some("svg"), Some("logo.svg".into()), &json!({})).unwrap();
+        assert_eq!(last(&written).as_deref(), Some("logo.svg"));
+        app.session.doc_mut().unwrap().path = None;
+        export(&mut app, Some("svg"), None, &json!({})).unwrap();
+        assert_ne!(last(&written).as_deref(), Some("logo-export.svg"));
+    }
+
+    /// Export for Screens, Export Selection to a format named, Save as PDF and a print saved as a
+    /// PDF are named the same way on the web: none of them may take the document's own file name.
+    #[test]
+    fn no_other_web_file_takes_the_documents_own_name() {
+        let written = Written::default();
+        let w = written.clone();
+        let download: crate::DownloadFn = Box::new(move |name: &str, b: &[u8]| {
+            w.borrow_mut().push((name.to_string(), b.to_vec()));
+            Ok(())
+        });
+        let mut app = VectorcraftApp::new(Session::new(), Services { download: Some(download), ..Default::default() });
+        let svg = br##"<svg xmlns="http://www.w3.org/2000/svg" width="20" height="10"><rect width="20" height="10" fill="#33aa77"/></svg>"##;
+        open_bytes(&mut app, "logo.svg", svg, Some("logo.svg".into())).unwrap();
+        let last = |written: &Written| written.borrow().last().map(|(name, _)| name.clone());
+        // Export for Screens' Full Document is named after the document.
+        export_files(&mut app, "document.exportForScreens", json!({"fullDocument": true, "formats": [{"format": "svg"}]})).unwrap();
+        assert_eq!(last(&written).as_deref(), Some("logo-export.svg"));
+        app.run("select.all", json!({})).unwrap();
+        run_to_file(&mut app, "document.exportSelection", "png", json!({"format": "svg"})).unwrap();
+        assert_eq!(last(&written).as_deref(), Some("logo-export.svg"));
+        // A document whose own file is a PDF.
+        app.session.doc_mut().unwrap().path = Some("logo.pdf".into());
+        export_pdf(&mut app, json!({})).unwrap();
+        assert_eq!(last(&written).as_deref(), Some("logo-export.pdf"));
+        crate::print::run(&mut app, &json!({"toFile": true})).unwrap();
+        assert_eq!(last(&written).as_deref(), Some("logo-export.pdf"));
+    }
+
     /// A `.ai` file saved from the app names the view's active artboard as its active one, in
     /// the editing copy other apps read.
     #[test]
