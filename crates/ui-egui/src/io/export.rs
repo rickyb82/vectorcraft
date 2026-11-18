@@ -1,7 +1,7 @@
 use super::save::{
-    ask_before_losing, ask_to_replace_files, checks_replaced, export_path, is_web, notes_of, remember_active_artboard, replaced_files, report_saved,
-    report_write_error, saved_status, show_with_notes, target_path, target_path_keeping, view_file, with_path, write_encoded, write_named,
-    write_reporting,
+    ask_before_losing, ask_to_replace_files, checks_replaced, export_path, is_web, named_apart, notes_of, remember_active_artboard, replaced_files,
+    report_saved, report_write_error, saved_status, show_with_notes, target_path, target_path_keeping, view_file, with_path, write_encoded,
+    write_named, write_reporting,
 };
 use super::{EngineError, Progress, Value, VectorcraftApp, Writer, background, cancel, fileio, json, progress};
 
@@ -446,15 +446,18 @@ fn report_exported(app: &mut VectorcraftApp, r: Value, folder: &str, hidden: Opt
             status = format!("{status} ({e})");
         }
         show_with_notes(app, status, notes_of(&r));
-    } else if let Some(download) = app.services.download.as_mut() {
-        // A browser download has no folders: a file from a sub-folder (`2x/Logo@2x.png`) is named alone.
-        let returned: Vec<(&str, &str)> = returned.iter().map(|(name, data)| (name.rsplit('/').next().unwrap_or(name), *data)).collect();
+    } else if is_web(app) {
+        // A browser download has no folders: a file from a sub-folder (`2x/Logo@2x.png`) is named
+        // alone, and never as the document's own file (a Full Document export is named after it).
+        let returned: Vec<(String, &str)> =
+            returned.iter().map(|(name, data)| (named_apart(app, name.rsplit('/').next().unwrap_or(name).to_string()), *data)).collect();
+        let download = app.services.download.as_mut().ok_or("no download")?;
         for (name, data) in &returned {
             let bytes = vectorcraft_format::base64_decode(data).ok_or("the export returned unreadable data")?;
             download(name, &bytes)?;
         }
         let what = match returned.as_slice() {
-            [(name, _)] => (*name).to_string(),
+            [(name, _)] => name.clone(),
             files => format!("{} files", files.len()),
         };
         match returned.first().filter(|_| warned) {

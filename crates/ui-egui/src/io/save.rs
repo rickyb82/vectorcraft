@@ -159,6 +159,12 @@ pub(crate) fn export_path(app: &mut VectorcraftApp, path: Option<String>, f: &Fo
 }
 
 /// [`target_path`], keeping a typed extension of a format `keeps` takes.
+///
+/// The web has no save panel to ask in, so a file written this way (an export, Save as PDF, a
+/// print saved as a PDF, never a save) is named after the document. In the document's own format
+/// that is the document's own file name: a second download of that name, and, for a page that
+/// hosts the app and keeps its files by name, the file written over the document. Such a file
+/// gets a name of its own (`logo-export.svg`). A path the caller gave is taken as given.
 pub(super) fn target_path_keeping(
     app: &mut VectorcraftApp,
     path: Option<String>,
@@ -170,7 +176,19 @@ pub(super) fn target_path_keeping(
     }
     let (name, folder) = suggested(app, ext);
     let filters = file_types(ext);
-    pick_path(app, &FilePick { name, folder, filters }, keeps)
+    let path = pick_path(app, &FilePick { name, folder, filters }, keeps)?;
+    Ok(if is_web(app) { named_apart(app, path) } else { path })
+}
+
+/// The web's download name `name`, else `<stem>-export.<ext>` when `name` is the active document's
+/// own file name (in any letter case): a file that is not a save of the document never takes its
+/// name ([`target_path_keeping`]).
+pub(super) fn named_apart(app: &VectorcraftApp, name: String) -> String {
+    let own = app.session.active().and_then(|d| d.path.as_deref()).map(fileio::file_name);
+    if own.is_some_and(|own| own.eq_ignore_ascii_case(&fileio::file_name(&name))) {
+        return format!("{}-export.{}", fileio::file_stem(&name), fileio::extension(&name));
+    }
+    name
 }
 
 /// Keep the active document's saved view current before a save (native files reopen at it), and
