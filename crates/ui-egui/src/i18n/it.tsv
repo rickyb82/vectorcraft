@@ -9550,3 +9550,659 @@ breakText	Glyphs	Glifi
 @msg	A panel is not joined to the rest by a crease.	Un pannello non è unito al resto da alcuna linea di cordonatura.
 @msg	A fold line is on a non-printing layer.	Una linea di piega si trova su un livello non stampabile.
 @msg	Panels: {panels}, hinges: {hinges}, errors: {errors}, warnings: {warnings}	Pannelli: {panels}, cerniere: {hinges}, errori: {errors}, avvisi: {warnings}
+# Strings the interface shows that had no Italian row: menu, dialog and list labels, default swatch names, status and error messages (AI-assisted, written from the meaning of the English).
+	1 bit	1 bit
+	1 Color Job	Lavoro a 1 colore
+	16 bit	16 bit
+	16 bits/pixel	16 bit/pixel
+	16 Colors	16 colori
+	2 Color Job	Lavoro a 2 colori
+	2-Up	2 viste
+	24 bit	24 bit
+	24 bits/pixel	24 bit/pixel
+	256 Colors	256 colori
+	2K Cinema	Cinema 2K
+	2up	2up
+	3 Color Job	Lavoro a 3 colori
+	3 Colors	3 colori
+	3 x 3 Average	Media 3 x 3
+	32 bit	32 bit
+	32 bits/pixel	32 bit/pixel
+	4 bit	4 bit
+	4-Up	4 viste
+	4K Cinema	Cinema 4K
+	4K UHD	4K UHD
+	4up	4up
+	5 x 5 Average	Media 5 x 5
+	6 Colors	6 colori
+	8 bit	8 bit
+	8 Colors	8 colori
+	8K UHD	8K UHD
+	[Custom]	[Personalizzato]
+	[Default]	[Predefinito]
+	A3	A3
+	A4	A4
+	A5	A5
+	A6	A6
+	Absolute Colorimetric	Colorimetrico assoluto
+	Adaptive	Adattivo
+	Add art with Add as Single Graphic, or drop art here.	Aggiungi la grafica con Aggiungi come grafica singola o trascinala qui.
+	Add as Single Graphic	Aggiungi come grafica singola
+	Add to Custom Dictionary	Aggiungi al dizionario personalizzato
+	All Affected Objects	Tutti gli oggetti interessati
+	All Layers	Tutti i livelli
+	All Rasterized Regions	Tutte le aree rasterizzate
+	All shortcuts reset to defaults.	Tutte le scelte rapide sono state ripristinate ai valori predefiniti.
+	All Slices	Tutte le sezioni
+	Alt+Click	Alt+clic
+	Alt+Drag	Alt+trascina
+	Analogous	Analoga
+	Analogous 2	Analoga 2
+	Anchor Point of Perspective Artwork	Punto di ancoraggio della grafica in prospettiva
+	Any except extracting pages	Qualsiasi tranne l'estrazione delle pagine
+	Apply Gradient Preset	Applica predefinito di sfumatura
+	Apply SVG Filter	Applica filtro SVG
+	Arrow (open)	Freccia (aperta)
+	Arrow Scale:	Scala freccia:
+	Arrow Style:	Stile freccia:
+	Art & Illustration	Arte e illustrazione
+	Auto Size	Dimensionamento automatico
+	Automatic Plane Positioning	Posizionamento automatico del piano
+	B4	B4
+	B5	B5
+	Bar	Barra
+	Barbed	Freccia uncinata
+	Baseline (Standard)	Baseline (standard)
+	Baseline Optimized	Baseline ottimizzato
+	Bicubic	Bicubica
+	Black & White	Bianco e nero
+	Black Outline	Contorno nero
+	Bounding Box	Riquadro di delimitazione
+	Bracket	Parentesi quadra
+	Branding	Branding
+	Brown	Marrone
+	Brush Options	Opzioni pennello
+	Bulgarian	Bulgaro
+	Business Card 3.5 × 2 in	Biglietto da visita 3,5 × 2 in
+	Business Card 85 × 55 mm	Biglietto da visita 85 × 55 mm
+	Business Card 91 × 55 mm	Biglietto da visita 91 × 55 mm
+	Cancel Image Trace	Annulla ricalco immagine
+	Cancel Opening	Annulla apertura
+	Caps Lock Cursor State	Stato Bloc Maiusc per il cursore
+	Catalan	Catalano
+	Change in Custom Dictionary	Sostituisci nel dizionario personalizzato
+	Change to:	Cambia in:
+	Check for Updates…	Verifica aggiornamenti…
+	Check Spelling	Controlla ortografia
+	Chevron	Chevron
+	Chinese	Cinese
+	Circle (open)	Cerchio (aperto)
+	Circle Through Points	Cerchio passante per punti
+	Clean Up	Pulisci
+	Click, then press the new shortcut (Esc cancels)	Fai clic, poi premi la nuova scelta rapida (Esc annulla)
+	Clip Group	Gruppo di ritaglio
+	CMYK Equivalents	Equivalenti CMYK
+	CMYK profile in effect	Profilo CMYK in uso
+	Command	Comando
+	Commenting, filling in form fields and signing	Commenti, compilazione dei campi modulo e firma
+	Complementary	Complementare
+	Complementary 2	Complementare 2
+	Complete	Completo
+	Composite	Composito
+	Compound	Composta
+	Compound 2	Composta 2
+	Configure Shape	Configura forma
+	Convert Layers to Objects	Converti livelli in oggetti
+	Convert to destination	Converti nella destinazione
+	Convert to destination (preserve numbers)	Converti nella destinazione (mantieni i valori)
+	Cool	Freddi
+	Copyright and Contact Info	Copyright e informazioni di contatto
+	Copyrighted	Protetto da copyright
+	Create Gradient Mesh	Crea trama sfumatura
+	Create Object Mosaic	Crea mosaico di oggetti
+	CRLF (Windows)	CRLF (Windows)
+	Croatian	Croato
+	Custom Scale	Scala personalizzata
+	Czech	Ceco
+	Danish	Danese
+	Default Graphic Style	Stile grafico predefinito
+	Delete from Custom Dictionary	Elimina dal dizionario personalizzato
+	Delete Gradient Preset	Elimina predefinito di sfumatura
+	Delete SVG Filter	Elimina filtro SVG
+	Devanagari	Devanagari
+	Diamond (open)	Rombo (aperto)
+	Diffusion	Diffusione
+	Dimension Lines	Linee di quota
+	Dimension Text	Testo di quota
+	Do Not Scale	Non ridimensionare
+	Don't include profiles	Non includere i profili
+	Dot on Bar	Punto su barra
+	Double Arrow	Doppia freccia
+	Double Bar	Doppia barra
+	Double Slash	Doppia barra obliqua
+	Down (right reading)	Giù (lettura diritta)
+	Drop	Goccia
+	Drop Script Engine	Elimina motore di script
+	Duplicate Effects	Duplica effetti
+	DWG (use DXF)	DWG (usa DXF)
+	Edit Character Style	Modifica stile carattere
+	Edit Paragraph Style	Modifica stile paragrafo
+	Edit Profile	Modifica profilo
+	Edit SVG Filter	Modifica filtro SVG
+	Emboss	Rilievo
+	Envelope	Involucro
+	Envelope #10	Busta n. 10
+	Envelope DL	Busta DL
+	Exact	Esatto
+	Expand as Wireframes	Espandi come reticoli
+	Expanded Patterns	Motivi espansi
+	Export All Open Documents	Esporta tutti i documenti aperti
+	Extension Lines	Linee di riferimento
+	Extension:	Prolungamento:
+	Face	Faccia
+	Feather	Piuma
+	Filling in form fields and signing	Compilazione dei campi modulo e firma
+	Film & Video	Film e video
+	Finnish	Finlandese
+	Fit to Page	Adatta alla pagina
+	Flatten Layers to a Single Image	Appiattisci livelli in un'unica immagine
+	Font Size:	Dimensione font:
+	Fork	Forcella
+	German: Swiss	Tedesco: Svizzera
+	GIF, 128 colours	GIF, 128 colori
+	Glow	Bagliore
+	Glyph Categories	Categorie di glifi
+	Go to Conflict	Vai al conflitto
+	Gradient Presets	Predefiniti di sfumatura
+	Graphics map onto the Plane, Extrude and Revolve object types.	Le grafiche si applicano ai tipi di oggetto Piano, Estrusione e Rivoluzione.
+	Gray	Grigio
+	Greeting Card	Biglietto d'auguri
+	Guide	Guida
+	Gurmukhi	Gurmukhi
+	Half Arrow (left)	Mezza freccia (sinistra)
+	Half Arrow (right)	Mezza freccia (destra)
+	Half Circle	Semicerchio
+	Hard Shadow	Ombra netta
+	HDTV 1080p	HDTV 1080p
+	HDTV 720p	HDTV 720p
+	Heavy Blur	Sfocatura intensa
+	Heavy Ink	Inchiostro carico
+	Hexagon	Esagono
+	Hexagon (open)	Esagono (aperto)
+	Hide Extension Lines	Nascondi linee di riferimento
+	Hide Presets	Nascondi predefiniti
+	Hide Units	Nascondi unità
+	High Contrast	Alto contrasto
+	High Contrast 2	Alto contrasto 2
+	High Contrast 3	Alto contrasto 3
+	High Fidelity Photo	Foto ad alta fedeltà
+	High Quality Print	Stampa di alta qualità
+	High resolution	Alta risoluzione
+	HTML and Images	HTML e immagini
+	Images Only	Solo immagini
+	Import Hidden Layers	Importa livelli nascosti
+	Import Metadata Template…	Importa modello di metadati…
+	Import Slices	Importa sezioni
+	Import SVG Filter	Importa filtro SVG
+	Import SVG Filter…	Importa filtro SVG…
+	Include all profiles	Includi tutti i profili
+	Include All Subdirectories	Includi tutte le sottocartelle
+	Include destination profile	Includi il profilo di destinazione
+	Include tagged source profiles	Includi i profili di origine con tag
+	Inserting, deleting and rotating pages	Inserimento, eliminazione e rotazione delle pagine
+	Intersection of Gridlines	Intersezione delle linee della griglia
+	Invalid panel layout; restored the default dock	La disposizione dei pannelli non è valida; è stato ripristinato l’ancoraggio predefinito
+	Japanese Double Postcard	Cartolina doppia giapponese
+	Japanese Envelope #3	Busta giapponese n. 3
+	Japanese Envelope #4	Busta giapponese n. 4
+	Japanese Postcard	Cartolina giapponese
+	Justify	Giustificato
+	Kaku #2	Kaku n. 2
+	Kaku #3	Kaku n. 3
+	Keeps the document editable: VectorCraft reopens the PDF with nothing lost. For files you'll edit again.	Mantiene il documento modificabile: VectorCraft riapre il PDF senza perdere nulla. Per i file che modificherai di nuovo.
+	Keyboard Shortcuts	Scelte rapide da tastiera
+	Kite	Aquilone
+	Landscape (flipped)	Orizzontale (capovolto)
+	Leaf	Foglia
+	Left Complement	Complementare sinistra
+	Legal	Legale
+	Letterhead A4	Carta intestata A4
+	Letterhead Letter	Carta intestata Lettera
+	LF (macOS, Linux)	LF (macOS, Linux)
+	Limit to Library	Limita alla libreria
+	Line Art	Grafica al tratto
+	Line Gap	Distanza tra le righe
+	Line Type:	Tipo di linea:
+	Line Weight:	Spessore linea:
+	List Installed Scripts	Elenca script installati
+	List Script Engines	Elenca motori di script
+	Load All Styles	Carica tutti gli stili
+	Load Character Styles	Carica stili carattere
+	Load Paragraph Styles	Carica stili paragrafo
+	Load Variable Library	Carica libreria di variabili
+	Logo 1000×1000	Logo 1000×1000
+	Low Fidelity Photo	Foto a bassa fedeltà
+	Low resolution (150 ppi)	Bassa risoluzione (150 ppi)
+	Manage Profiles	Gestisci profili
+	Map Graphic	Applica grafica
+	Mapped graphics	Grafiche applicate
+	Materials	Materiali
+	Maximize Editability	Massimizza modificabilità
+	Menu Commands	Comandi di menu
+	Mesh	Trama
+	Metadata Templates	Modelli di metadati
+	Mobile	Dispositivi mobili
+	Monochromatic	Monocromatica
+	Move Document	Sposta documento
+	Move Object on Path	Sposta oggetto su tracciato
+	Move Type Path Handle	Sposta maniglia del testo su tracciato
+	Muted	Tenui
+	Negative	Negativo
+	Neon & Glow	Neon e bagliore
+	NEW DOCUMENT PROFILES	PROFILI NUOVO DOCUMENTO
+	New Document Profiles	Profili nuovo documento
+	New Layer	Nuovo livello
+	New Sublayer	Nuovo sottolivello
+	New SVG Filter	Nuovo filtro SVG
+	No conversion	Nessuna conversione
+	No Dither	Nessun dithering
+	No downsampling	Nessun sottocampionamento
+	No Slices	Nessuna sezione
+	None (Color Preview)	Nessuno (anteprima a colori)
+	Norwegian	Norvegese
+	Not in Dictionary:	Non presente nel dizionario:
+	of	di
+	Outlined Strokes	Tracce convertite in contorni
+	Outlined Text	Testo convertito in contorni
+	Oval	Ovale
+	Override Action "Export" Commands	Sostituisci i comandi “Esporta” dell'azione
+	Override Action "Open" Commands	Sostituisci i comandi “Apri” dell'azione
+	Override Action "Save" Commands	Sostituisci i comandi “Salva” dell'azione
+	Page Cover 1640×624	Copertina pagina 1640×624
+	PDF 1.7	PDF 1.7
+	PDF File	File PDF
+	PDF/X-1a:2001	PDF/X-1a:2001
+	PDF/X-3:2002	PDF/X-3:2002
+	PDF/X-4:2010	PDF/X-4:2010
+	Pentagram	Pentagramma
+	Phone 360×800	Telefono 360×800
+	Phone 375×667	Telefono 375×667
+	Phone 393×852	Telefono 393×852
+	Phone 412×915	Telefono 412×915
+	Phone 430×932	Telefono 430×932
+	Pick a graphic above to map it onto the object.	Scegli una grafica qui sopra per applicarla all'oggetto.
+	Pick from Swatches	Scegli dai campioni
+	Place PSD	Inserisci PSD
+	Placed Document	Documento inserito
+	Play:	Esegui:
+	Plus	Più
+	Points:	Punte:
+	Polish	Polacco
+	Portrait (flipped)	Verticale (capovolto)
+	Positive	Positivo
+	Poster 18 × 24 in	Poster 18 × 24 in
+	Poster 24 × 36 in	Poster 24 × 36 in
+	Preparing the image…	Preparazione dell'immagine…
+	Preserve Appearance	Mantieni aspetto
+	Preserve Tints	Mantieni tinte
+	Press keys…	Premi i tasti…
+	Press Quality	Qualità tipografica
+	Profile Cover 1500×500	Copertina profilo 1500×500
+	PSD Import Options	Opzioni di importazione PSD
+	PSD Info	Informazioni PSD
+	Public Domain	Pubblico dominio
+	Rasterized Complex Regions	Aree complesse rasterizzate
+	Reading the file…	Lettura del file…
+	Relative Colorimetric	Colorimetrico relativo
+	Remove Effects	Rimuovi effetti
+	Remove Graphic	Rimuovi grafica
+	Remove the shortcut	Rimuovi la scelta rapida
+	Replace the selected 3D objects with the edges of their faces, as stroked paths.	Sostituisci gli oggetti 3D selezionati con gli spigoli delle loro facce, come tracciati con traccia.
+	Reset Profile	Reimposta profilo
+	Reset to Defaults	Reimposta valori predefiniti
+	Reshape Type Path	Rimodella testo su tracciato
+	Reverse Triangle	Triangolo invertito
+	RGB	RGB
+	Right Complement	Complementare destra
+	Rough Edges	Bordi irregolari
+	Run Length	Run-length (RLE)
+	Russian	Russo
+	Save and Close	Salva e chiudi
+	Save Gradient Preset	Salva predefinito di sfumatura
+	Save Gradient Preset…	Salva predefinito di sfumatura…
+	Scale Tints	Scala tinte
+	Select a 3D object to map the graphic onto it.	Seleziona un oggetto 3D per applicarvi la grafica.
+	Select Object on Path	Seleziona oggetto su tracciato
+	Select Symbol Instance Part	Seleziona parte dell'istanza di simbolo
+	Selected Slices	Sezioni selezionate
+	Selective	Selettivo
+	Separations	Separazioni
+	Serbian: Cyrillic	Serbo: cirillico
+	Serbian: Latin	Serbo: latino
+	Set Panel View	Imposta vista pannello
+	Set:	Set:
+	Shades	Ombre
+	Shades of Gray	Toni di grigio
+	Shift+Click	Shift+clic
+	Shift+Drag	Shift+trascina
+	Show Hidden Panels at Edge	Mostra pannelli nascosti sul bordo
+	Show Presets	Mostra predefiniti
+	Shrink Text to Fit	Riduci testo per adattarlo
+	Silhouettes	Sagome
+	Simulate	Simula
+	Simulate prints overprints as Overprint Preview shows them; separations always keep them. A preset flattens transparency before printing (PostScript files always flatten it).	“Simula” stampa le sovrastampe come le mostra Anteprima sovrastampa; le separazioni le mantengono sempre. Un preset appiattisce la trasparenza prima della stampa (i file PostScript la appiattiscono sempre).
+	Sketched Art	Grafica a schizzo
+	Slash	Barra obliqua
+	Smallest File Size	Dimensione file minima
+	Social	Social
+	Social Landscape Post 1200×630	Post orizzontale per social 1200×630
+	Social Portrait Post 1080×1350	Post verticale per social 1080×1350
+	Social Story 1080×1920	Storia per social 1080×1920
+	Social Tall Post 1000×1500	Post alto per social 1000×1500
+	Soft Blur	Sfocatura leggera
+	Soft Shadow	Ombra morbida
+	Sort by Hue	Ordina per tonalità
+	Sort by Luminance	Ordina per luminanza
+	Sort by Popularity	Ordina per frequenza
+	Spectrum	Spettro
+	Spelling Suggestions	Suggerimenti ortografici
+	Split Complementary	Complementare divisa
+	Square (open)	Quadrato (aperto)
+	Square 8 × 8 in	Quadrato 8 × 8 in
+	sRGB IEC61966-2.1	sRGB IEC61966-2.1
+	Stop on Errors	Interrompi in caso di errori
+	Stroke Weight Down	Riduci spessore traccia
+	Stroke Weight Up	Aumenta spessore traccia
+	Subsample	Campionamento puntuale
+	Subset	Sottoinsieme
+	Suggestions:	Suggerimenti:
+	Sunshine	Sole
+	SVG 1.1	SVG 1.1
+	SVG Filter	Filtro SVG
+	Swallowtail	Coda di rondine
+	Swedish	Svedese
+	Symbol	Simbolo
+	Tablet 1024×1366	Tablet 1024×1366
+	Tablet 768×1024	Tablet 768×1024
+	Tablet 800×1280	Tablet 800×1280
+	Tablet 820×1180	Tablet 820×1180
+	Tablet 834×1194	Tablet 834×1194
+	Tabloid	Tabloid
+	Tag	Etichetta
+	Tag (open)	Etichetta (aperta)
+	Technical Drawing	Disegno tecnico
+	Tetrad	Tetrade
+	Tetrad 2	Tetrade 2
+	Tetrad 3	Tetrade 3
+	The selected objects have different graphics.	Gli oggetti selezionati hanno grafiche diverse.
+	The spell check is complete.	Il controllo ortografico è terminato.
+	Thicken	Ispessimento
+	Thin	Assottigliamento
+	Tile Imageable Areas	Affianca aree stampabili
+	Tool	Strumento
+	Tracing the colors…	Ricalco dei colori…
+	Transparent Objects	Oggetti trasparenti
+	Triad	Triade
+	Triad 2	Triade 2
+	Triad 3	Triade 3
+	Triangle	Triangolo
+	Triangle (open)	Triangolo (aperto)
+	Triangle to Bar	Triangolo su barra
+	True Colors	Colori reali
+	Units & Scale	Unità e scala
+	Unknown	Sconosciuto
+	Unsorted	Nessun ordinamento
+	Up (right reading)	Su (lettura diritta)
+	Use Default	Usa predefinita
+	UTF-16 (Unicode)	UTF-16 (Unicode)
+	VectorCraft Default	Predefinito di VectorCraft
+	VectorCraft Defaults	Valori predefiniti di VectorCraft
+	VectorCraft Generic CMYK (SWOP-like)	CMYK generico VectorCraft (simile a SWOP)
+	VectorCraft Swatches (.vcswatches)	Campioni VectorCraft (.vcswatches)
+	VectorCraft Updates	Aggiornamenti di VectorCraft
+	Video Banner 2560×1440	Banner video 2560×1440
+	Video Thumbnail 1280×720	Miniatura video 1280×720
+	Visible & Printable Layers	Livelli visibili e stampabili
+	Visible Layers	Livelli visibili
+	Vivid	Vivaci
+	Warm	Caldi
+	Watch 184×224	Orologio 184×224
+	Watch 198×242	Orologio 198×242
+	Weather Icons	Icone meteo
+	Web 1024×768	Web 1024×768
+	Web 1280×800	Web 1280×800
+	Web 1366×768	Web 1366×768
+	Web 1440×900	Web 1440×900
+	Web 1600×900	Web 1600×900
+	WebP	WebP
+	Word Gap	Distanza tra le parole
+	Yonroku-ban	Yonroku-ban
+	⚠ {chord} was already used by {names} — it has been removed there.	⚠ La scelta rapida {chord} era già assegnata a {names}: è stata rimossa da lì.
+@msg	`anchor` must be a [subpath, anchor] pair	`anchor` deve essere una coppia [subpath, anchor]
+@msg	`anchor` needs `id`, the path the point is on	`anchor` richiede `id`, il tracciato su cui si trova il punto
+@msg	`args` is larger than 1 MiB	`args` supera 1 MiB
+@msg	`args{place}` is nested more than 64 levels deep	`args{place}` è nidificato per più di 64 livelli
+@msg	`artboard` must be an artboard's index	`artboard` deve essere l'indice di una tavola da disegno
+@msg	`artboards` must contain whole numbers	`artboards` deve contenere numeri interi
+@msg	`family` is required	`family` è obbligatorio
+@msg	`from.byte` is past the end of {id}'s text	`from.byte` va oltre la fine del testo di {id}
+@msg	`from.id` must be a type object's id	`from.id` deve essere l'id di un oggetto di testo
+@msg	`from.id` {id} is not a type object	`from.id` {id} non è un oggetto di testo
+@msg	`from.id` {id} is not one of the type objects checked	`from.id` {id} non è uno degli oggetti di testo controllati
+@msg	`from` takes id and byte, not `{k}`	`from` accetta id e byte, non `{k}`
+@msg	`index` must be the index of an applied SVG filter	`index` deve essere l'indice di un filtro SVG applicato
+@msg	`installed` takes a `path`, not a `source`	`installed` accetta un `path`, non un `source`
+@msg	`limit` must be a whole number from 1 to {MAX_SIMILAR}	`limit` deve essere un numero intero compreso tra 1 e {MAX_SIMILAR}
+@msg	`lineWidth` must be from {min} to {max} pt, not {w}	`lineWidth` deve essere compreso tra {min} e {max} pt, non {w}
+@msg	`maxFuel` must be a whole number from 1 to {_1}	`maxFuel` deve essere un numero intero compreso tra 1 e {_1}
+@msg	`panel` is swatches, graphicStyles or symbols	`panel` è swatches, graphicStyles o symbols
+@msg	`path` must name a .js or .jsx file	`path` deve indicare un file .js o .jsx
+@msg	`reference` must be a whole number from 0 to 8	`reference` deve essere un numero intero compreso tra 0 e 8
+@msg	`ringSeed` must be below 2^53, not {r}	`ringSeed` deve essere inferiore a 2^53, non {r}
+@msg	`side` must be left, right or null	`side` deve essere left, right o null
+@msg	`source` is the only path, line or label that graph group `target` stands for	`source` è l'unico tracciato, linea o etichetta rappresentato dal gruppo del grafico `target`
+@msg	`start` is a number up to 1 (below 0: before an open path's start)	`start` è un numero fino a 1 (sotto 0: prima dell'inizio di un tracciato aperto)
+@msg	`style` must be "pencil" or "brush", not {v}	`style` deve essere "pencil" o "brush", non {v}
+@msg	`swatch` in `colors` must be a swatch name, not {name}	`swatch` in `colors` deve essere il nome di un campione, non {name}
+@msg	`tolerance` must be from {_1} to {_2} pt	`tolerance` deve essere compreso tra {_1} e {_2} pt
+@msg	`value` needs `spacing` (steps|distance)	`value` richiede `spacing` (steps|distance)
+@msg	`words` must be a list of {{id, start, end}}	`words` deve essere un elenco di {{id, start, end}}
+@msg	`{_1}`: a character set keeps at most {CUSTOM_CHARS_MAX} characters	`{_1}`: un set di caratteri contiene al massimo {CUSTOM_CHARS_MAX} caratteri
+@msg	`{_1}`: U+{_2} is a control character or past U+FFFF	`{_1}`: U+{_2} è un carattere di controllo o va oltre U+FFFF
+@msg	`{code}` is not a code from U+0000 to U+FFFF	`{code}` non è un codice da U+0000 a U+FFFF
+@msg	`{font}`: `{name}`: a character set keeps at most {CUSTOM_CHARS_MAX} characters	`{font}`: `{name}`: un set di caratteri contiene al massimo {CUSTOM_CHARS_MAX} caratteri
+@msg	`{font}`: `{name}`: characters must be a string	`{font}`: `{name}`: characters deve essere una stringa
+@msg	`{font}`: `{name}`: {e}	`{font}`: `{name}`: {e}
+@msg	`{font}`: each character set must be {{name, characters, font…}}	`{font}`: ogni set di caratteri deve essere {{name, characters, font…}}
+@msg	`{font}`: each character set needs a name	`{font}`: ogni set di caratteri richiede un nome
+@msg	`{font}`: unknown key `{k}` in a character set	`{font}`: chiave sconosciuta `{k}` in un set di caratteri
+@msg	`{key}` must be a list of artboard indices	`{key}` deve essere un elenco di indici di tavole da disegno
+@msg	`{key}` must be a non-empty list of artboard indices	`{key}` deve essere un elenco non vuoto di indici di tavole da disegno
+@msg	`{key}` must contain whole numbers	`{key}` deve contenere numeri interi
+@msg	`{k}` isn't an export setting: {_1}, openLocation	`{k}` non è un'impostazione di esportazione: {_1}, openLocation
+@msg	`{name}` already carries the {_1} role	`{name}` è già il campione del tipo di linea {_1}
+@msg	`{name}` can't name a character set	`{name}` non può essere il nome di un set di caratteri
+@msg	`{name}` isn't a global or spot color	`{name}` non è un colore globale o spot
+@msg	`{name}`: a character set keeps at most {CUSTOM_CHARS_MAX} characters	`{name}`: un set di caratteri contiene al massimo {CUSTOM_CHARS_MAX} caratteri
+@msg	`{name}`: a composite font keeps at most {CUSTOM_SETS_MAX} character sets	`{name}`: un font composito contiene al massimo {CUSTOM_SETS_MAX} set di caratteri
+@msg	`{name}`: custom must be a list of character sets	`{name}`: custom deve essere un elenco di set di caratteri
+@msg	`{name}`: U+{code} is a control character or past U+FFFF	`{name}`: U+{code} è un carattere di controllo o va oltre U+FFFF
+@msg	`{name}`: U+{code} is listed twice	`{name}`: U+{code} è elencato due volte
+@msg	`{raw}` can't name a character set (1 to {COMPOSITE_NAME_MAX} characters, no control characters)	`{raw}` non può essere il nome di un set di caratteri (da 1 a {COMPOSITE_NAME_MAX} caratteri, senza caratteri di controllo)
+@msg	a composite font keeps at most {CUSTOM_SETS_MAX} character sets	un font composito contiene al massimo {CUSTOM_SETS_MAX} set di caratteri
+@msg	a document holds at most {_1} SVG filters, and applying a default filter adds it	un documento contiene al massimo {_1} filtri SVG e applicare un filtro predefinito lo aggiunge al documento
+@msg	a new document has no artboard	un nuovo documento non ha tavole da disegno
+@msg	a slice in the slices' descriptor has no bounds	una sezione nel descrittore delle sezioni non ha limiti
+@msg	a slice's bounds in the slices' descriptor aren't numbers	i limiti di una sezione nel descrittore delle sezioni non sono numeri
+@msg	a slice's text has more than the {MAX_SLICE_TEXT} characters a PSD file holds	il testo di una sezione supera i {MAX_SLICE_TEXT} caratteri che un file PSD può contenere
+@msg	a text in the slices has more than the {MAX_TEXT} characters read	un testo nelle sezioni supera i {MAX_TEXT} caratteri che vengono letti
+@msg	a word's `id` must be a type object's id	l'`id` di una parola deve essere l'id di un oggetto di testo
+@msg	a word's `{k}` must be a whole number	`{k}` di una parola deve essere un numero intero
+@msg	alignToPixelGrid must be true or false	alignToPixelGrid deve essere true o false
+@msg	an image is too large to draw	un'immagine è troppo grande per essere disegnata
+@msg	an image of {sw} × {sh} pixels is too large to resample	un'immagine di {sw} × {sh} pixel è troppo grande per essere ricampionata
+@msg	anchor [{_1}, {_2}] of object {id} is not a selected anchor point	l'ancoraggio [{_1}, {_2}] dell'oggetto {id} non è un punto di ancoraggio selezionato
+@msg	anchorPoint must be true or false	anchorPoint deve essere true o false
+@msg	Automatic Plane Positioning is off: turn on anchorPoint or gridlineIntersection (perspective.widget.options)	Il posizionamento automatico del piano è disattivato: attiva anchorPoint o gridlineIntersection (perspective.widget.options)
+@msg	byColor needs the seam fills' group under every path: move it to the bottom or delete it	byColor richiede il gruppo dei riempimenti di giunzione sotto tutti i tracciati: spostalo in fondo o eliminalo
+@msg	can't open `{_1}`: not a PDF	impossibile aprire `{_1}`: non è un PDF
+@msg	cannot apply brush `{name}`: path has no stroke	impossibile applicare il pennello `{name}`: il tracciato non ha traccia
+@msg	color group `{g}` holds swatches that are not colors, which Save Changes can't keep	il gruppo colori `{g}` contiene campioni che non sono colori e che Salva modifiche non può conservare
+@msg	data set `{name}` holds a graph value for `{var}` with {_1}	il set di dati `{name}` contiene per `{var}` un valore di grafico con {_1}
+@msg	data set `{name}` holds a graph value for `{var}` without rows or series	il set di dati `{name}` contiene per `{var}` un valore di grafico senza righe né serie
+@msg	data set `{name}` holds an image value for `{var}` that isn't a file's absolute path	il set di dati `{name}` contiene per `{var}` un valore di immagine che non è il percorso assoluto di un file
+@msg	data set `{set}` holds a graph value for `{var}` longer than {MAX_GRAPH_CSV} bytes	il set di dati `{set}` contiene per `{var}` un valore di grafico più lungo di {MAX_GRAPH_CSV} byte
+@msg	data set `{set}` holds a graph value for `{var}` with {_1}	il set di dati `{set}` contiene per `{var}` un valore di grafico con {_1}
+@msg	data set `{set}` holds a value for `{_1}` that isn't {what}	il set di dati `{set}` contiene per `{_1}` un valore che non è {what}
+@msg	data set `{set}` holds a value for `{var}` that isn't a graph's `data` element	il set di dati `{set}` contiene per `{var}` un valore che non è un elemento `data` di un grafico
+@msg	duplicate attribute `{key}`	attributo `{key}` duplicato
+@msg	duplicate expanded attribute `{key}`	attributo espanso `{key}` duplicato
+@msg	each of `words` must be {{id, start, end}}	ogni elemento di `words` deve essere {{id, start, end}}
+@msg	each of `words` takes id, start and end, not `{k}`	ogni elemento di `words` accetta id, start e end, non `{k}`
+@msg	give exactly one of `path` and `source`	indica esattamente uno tra `path` e `source`
+@msg	gridlineIntersection must be true or false	gridlineIntersection deve essere true o false
+@msg	hiddenLayers applies to a PSD file placed with layers: true	hiddenLayers si applica a un file PSD inserito con layers: true
+@msg	image is too large to draw	l'immagine è troppo grande per essere disegnata
+@msg	importSlices must be true or false	importSlices deve essere true o false
+@msg	importSlices: a linked PSD file is placed as its flat image; give link: false to embed it with its slices	importSlices: un file PSD collegato viene inserito come immagine appiattita; indica link: false per incorporarlo con le sue sezioni
+@msg	invalid 16-bit pixel buffer	buffer di pixel a 16 bit non valido
+@msg	invalid 8-bit pixel buffer	buffer di pixel a 8 bit non valido
+@msg	knockout groups with brushed strokes over other translucent elements are written as PDF knockout groups: their translucent elements knock out what they cover fully	i gruppi con foratura che hanno tracce a pennello sopra altri elementi traslucidi vengono scritti come gruppi con foratura PDF: i loro elementi traslucidi forano completamente ciò che coprono
+@msg	knockout groups with too many overlapping translucent elements are written as PDF knockout groups: their translucent elements knock out what they cover fully	i gruppi con foratura che hanno troppi elementi traslucidi sovrapposti vengono scritti come gruppi con foratura PDF: i loro elementi traslucidi forano completamente ciò che coprono
+@msg	layers: a linked PSD file is placed as its flat image; leave link out or give link: false	layers: un file PSD collegato viene inserito come immagine appiattita; ometti link o indica link: false
+@msg	linkPages can't be used with textAs: outlines: linked pages show the file's own type	linkPages non può essere usato con textAs: outlines: le pagine collegate mostrano il testo del file così com'è
+@msg	linkPages can't open a file with a password: linked pages are read again without it	linkPages non può aprire un file protetto da password: le pagine collegate vengono rilette senza la password
+@msg	linkPages must be true or false	linkPages deve essere true o false
+@msg	linkPages needs the file's path: linked pages are read from it	linkPages richiede il percorso del file: le pagine collegate vengono lette dal file
+@msg	linkPages: `{file}` is over {_1} MB	linkPages: `{file}` supera {_1} MB
+@msg	linkPages: `{file}` isn't a PDF or a PDF-compatible .ai file	linkPages: `{file}` non è un PDF né un file .ai compatibile con PDF
+@msg	match applies only with scope {scopes}	match si applica solo con scope {scopes}
+@msg	match must be a paint as the document stores it	match deve essere una pittura nel formato in cui è memorizzata nel documento
+@msg	mode must be replace or append	la modalità deve essere replace o append
+@msg	no character set	nessun set di caratteri
+@msg	no panels are docked on the {_1} side	nessun pannello è ancorato sul lato {_1}
+@msg	no selected object fits on the sheet	nessun oggetto selezionato entra nel foglio
+@msg	no symbol named `{name}` in the document it came from	nessun simbolo denominato `{name}` nel documento da cui proviene
+@msg	not a gradient mesh or mesh envelope	non è una trama sfumatura né un involucro a trama
+@msg	orientation must be page or path	orientation deve essere page o path
+@msg	pdfs `single` writes artboards as the pages of one PDF: assets, layers and selection `each` write a PDF each	pdfs `single` scrive le tavole da disegno come pagine di un unico PDF: assets, layers e selection `each` scrivono un PDF ciascuno
+@msg	plugin.remove: {_1}: {e}: nothing was removed	plugin.remove: {_1}: {e}: non è stato rimosso nulla
+@msg	preserveText writes type layers: it needs layers: true	preserveText scrive livelli di testo: richiede layers: true
+@msg	quality must be a whole number from 0 to 100, not {v}	quality deve essere un numero intero da 0 a 100, non {v}
+@msg	rect is [x, y, width, height] in points, with a width and a height above 0	rect è [x, y, width, height] in punti, con larghezza e altezza maggiori di 0
+@msg	scale: give one percentage, or the same width and height, while scale.linked is on (linked: false scales them apart)	scale: indica una sola percentuale, o larghezza e altezza uguali, mentre scale.linked è attivo (linked: false le scala separatamente)
+@msg	scale: width ({_1}%) and height ({_2}%) must be equal while scale.linked is on	scale: larghezza ({_1}%) e altezza ({_2}%) devono essere uguali mentre scale.linked è attivo
+@msg	scope applies to a click: leave out points	scope si applica a un clic: ometti points
+@msg	scope must be "one", "connected" or "samePaint"	scope deve essere "one", "connected" o "samePaint"
+@msg	select a path that is neither locked nor hidden: text, images and symbol instances can't have a fold line role	seleziona un tracciato né bloccato né nascosto: testo, immagini e istanze di simbolo non possono avere un tipo di linea di piega
+@msg	select another anchor point to align to the key anchor	seleziona un altro punto di ancoraggio da allineare al punto di ancoraggio chiave
+@msg	select at most {MAX_SHAPES} objects to nest	seleziona al massimo {MAX_SHAPES} oggetti da annidare
+@msg	slice {number} has no finite bounds and can't be written to PSD	la sezione {number} non ha limiti finiti e non può essere scritta in PSD
+@msg	sort `{x}`: name, kind, status or size	sort `{x}`: name, kind, status o size
+@msg	style `{style}` of `{family}` is not available	lo stile `{style}` di `{family}` non è disponibile
+@msg	the character at byte {start} is not drawn: it falls before its path's start	il carattere al byte {start} non viene disegnato: cade prima dell'inizio del suo tracciato
+@msg	the composite fonts make a file larger than 4 MB, which Import can't read; export fewer of them	i font compositi generano un file più grande di 4 MB, che Importa font compositi non può leggere; esportane di meno
+@msg	the decoded samples don't fit the image	i campioni decodificati non corrispondono all'immagine
+@msg	the document has {count} slices, more than the {MAX_SLICES} a PSD file holds	il documento ha {count} sezioni, più delle {MAX_SLICES} che un file PSD può contenere
+@msg	the document it was dropped on was closed	il documento su cui è stato rilasciato è stato chiuso
+@msg	the document it was dropped on was reverted	il documento su cui è stato rilasciato è stato ripristinato
+@msg	the document was switched	il documento attivo è cambiato
+@msg	the file has {_1} slices, more than the {MAX_SLICES} read	il file ha {_1} sezioni, più delle {MAX_SLICES} che si possono leggere
+@msg	the file has {count} slices, more than the {MAX_SLICES} read	il file ha {count} sezioni, più delle {MAX_SLICES} che si possono leggere
+@msg	the file is no longer loaded	il file non è più caricato
+@msg	the image is too large to change	l'immagine è troppo grande per essere modificata
+@msg	the image is too large to draw	l'immagine è troppo grande per essere disegnata
+@msg	the image's size can't be read	impossibile leggere le dimensioni dell'immagine
+@msg	the lines and labels in graph group {_1} have different appearance rows: pass `aligned: true` or their ids	le linee e le etichette del gruppo di grafico {_1} hanno righe di aspetto diverse: passa `aligned: true` o i loro id
+@msg	the margin leaves no room on the sheet	il margine non lascia spazio sul foglio
+@msg	the panels are not hidden	i pannelli non sono nascosti
+@msg	the perspective grid is hidden	la griglia prospettica è nascosta
+@msg	the place cursor that asked for these import options is no longer loaded	il cursore di inserimento che ha richiesto queste opzioni di importazione non è più caricato
+@msg	the plug-in store can't be locked	l'archivio dei plug-in non può essere bloccato
+@msg	the RGB policy can't be {_1}	il criterio RGB non può essere {_1}
+@msg	the selection has nothing to nest	la selezione non contiene nulla da annidare
+@msg	the slices are stored in version {v}, which isn't read	le sezioni sono memorizzate nella versione {v}, che non può essere letta
+@msg	the slices are too large for PSD (at most 4 GB)	le sezioni sono troppo grandi per PSD (al massimo 4 GB)
+@msg	the slices' descriptor has a reference of an unknown kind ({_1})	il descrittore delle sezioni ha un riferimento di tipo sconosciuto ({_1})
+@msg	the slices' descriptor has a value of an unknown type ({_1})	il descrittore delle sezioni ha un valore di tipo sconosciuto ({_1})
+@msg	the slices' descriptor has a version other than 16	il descrittore delle sezioni ha una versione diversa da 16
+@msg	the slices' descriptor has no list of slices	il descrittore delle sezioni non ha un elenco di sezioni
+@msg	the slices' descriptor holds too many values	il descrittore delle sezioni contiene troppi valori
+@msg	the slices' descriptor lists something other than a slice	il descrittore delle sezioni elenca qualcosa che non è una sezione
+@msg	the slices' descriptor nests too deep	il descrittore delle sezioni è annidato troppo in profondità
+@msg	the {_1} file holds no records	il file {_1} non contiene record
+@msg	the {_1} header is damaged	l'intestazione {_1} è danneggiata
+@msg	there is no artboard for the sheet	non c'è una tavola da disegno per il foglio
+@msg	there is no artboard {i}	la tavola da disegno {i} non esiste
+@msg	through applies to scope "connected"	through si applica a scope "connected"
+@msg	through must be an array of at most 4096 edge ids	through deve essere un array di al massimo 4096 id di bordi
+@msg	through: {id} is not an edge of {g}, or is given twice	through: {id} non è un bordo di {g}, oppure è indicato due volte
+@msg	tolerance must be 0 or more	tolerance deve essere 0 o maggiore
+@msg	too many in-scope namespace declarations	troppe dichiarazioni di namespace attive
+@msg	two character sets are named `{name}`	due set di caratteri si chiamano `{name}`
+@msg	unknown `by` "{name}": expected one of {_1}	`by` sconosciuto "{name}": previsto uno tra {_1}
+@msg	unknown key `{k}`; a font takes name, parts and custom	chiave sconosciuta `{k}`; un font accetta name, parts e custom
+@msg	unknown role `{id}`: cut, crease, partialCut or perforation	tipo di linea sconosciuto `{id}`: cut, crease, partialCut o perforation
+@msg	unknown role `{id}`: cut, crease, partialCut, perforation or none	tipo di linea sconosciuto `{id}`: cut, crease, partialCut, perforation o none
+@msg	variable `{_1}` starts or ends with white space or holds a control character, which a variable library can't hold	la variabile `{_1}` inizia o finisce con uno spazio o contiene un carattere di controllo, che una libreria di variabili non può contenere
+@msg	words of {_1} overlap at byte {a}	le parole di {_1} si sovrappongono al byte {a}
+@msg	{_1} is not a type object	{_1} non è un oggetto di testo
+@msg	{a}..{b} is not a word of {_1}'s text	{a}..{b} non è una parola del testo di {_1}
+@msg	{C}: {_1}: {e}: nothing was installed	{C}: {_1}: {e}: non è stato installato nulla
+@msg	{EXPORT_SELECTION} must be true or false, not {v}	{EXPORT_SELECTION} deve essere true o false, non {v}
+@msg	{label}: the clipping masks hide the selected art	{label}: le maschere di ritaglio nascondono la grafica selezionata
+@msg	{mode_key} is one of {ERASER_MODES}, not `{id}`	{mode_key} è uno tra {ERASER_MODES}, non `{id}`
+@msg	{mode_key} is one of {ERASER_MODES}, not {other}	{mode_key} è uno tra {ERASER_MODES}, non {other}
+@msg	{name} is a default SVG filter, and the document holds no copy of it to delete	{name} è un filtro SVG predefinito e il documento non ne contiene una copia da eliminare
+@msg	{path}: invalid pixel buffer	{path}: buffer di pixel non valido
+@msg	{var_key} must be 0 or more	{var_key} deve essere 0 o maggiore
+@msg	{var_key} must be at most {most}	{var_key} deve essere al massimo {most}
+@msg	{why} (the {_1} role's swatch; addon.packaging.setRoleSwatch picks another)	{why} (il campione del tipo di linea {_1}; addon.packaging.setRoleSwatch ne sceglie un altro)
+@msg	{w} × {h} pixels take {rgba} bytes as RGBA	{w} × {h} pixel occupano {rgba} byte in RGBA
+@plural	{n} more file waiting|{n} more files waiting	{n} altro file in attesa|{n} altri file in attesa
+@plural	{n} shortcut is assigned more than once|{n} shortcuts are assigned more than once	{n} scelta rapida è assegnata più di una volta|{n} scelte rapide sono assegnate più di una volta
+swatch	[None]	[Nessuno]
+swatch	[Registration]	[Registro]
+swatch	Amber	Ambra
+swatch	Aqua	Verde acqua
+swatch	Azure	Azzurro
+swatch	Black	Nero
+swatch	Blue	Blu
+swatch	Bright Blue	Blu brillante
+swatch	Bright Green	Verde brillante
+swatch	Bright Red	Rosso brillante
+swatch	Bright Violet	Viola brillante
+swatch	Bright Yellow	Giallo brillante
+swatch	Brights	Brillanti
+swatch	Brown	Marrone
+swatch	Chocolate	Cioccolato
+swatch	Coffee	Caffè
+swatch	Copper	Rame
+swatch	Cyan	Ciano
+swatch	Cyan Green	Verde ciano
+swatch	Emerald	Smeraldo
+swatch	Espresso	Espresso
+swatch	Grays	Grigi
+swatch	Green	Verde
+swatch	Indigo	Indaco
+swatch	Lime	Lime
+swatch	Magenta	Magenta
+swatch	Ocean	Oceano
+swatch	Orange	Arancione
+swatch	Orange Red	Rosso arancio
+swatch	Pink	Rosa
+swatch	Purple	Porpora
+swatch	Radial White, Black	Radiale bianco, nero
+swatch	Red	Rosso
+swatch	Rose	Rosa scuro
+swatch	Rust	Ruggine
+swatch	Sand	Sabbia
+swatch	Sunset	Tramonto
+swatch	Tan	Cuoio
+swatch	Teal	Verde petrolio
+swatch	Violet	Viola
+swatch	Walnut	Noce
+swatch	White	Bianco
+swatch	White, Black	Bianco, nero
+swatch	Yellow	Giallo
+swatch	Yellow Green	Giallo verde
